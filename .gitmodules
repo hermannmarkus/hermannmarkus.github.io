@@ -1,3 +1,6 @@
 [submodule "pck-transcripts"]
 	path = pck-transcripts
 	url = https://github.com/hermannmarkus/pck-transcripts/
+[submodule "ableplayer"]
+	path = ableplayer
+	url = https://github.com/ableplayer/ableplayer
