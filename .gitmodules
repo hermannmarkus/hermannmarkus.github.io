@@ -1,0 +1,3 @@
+[submodule "pck-transcripts"]
+	path = pck-transcripts
+	url = https://github.com/hermannmarkus/pck-transcripts/
