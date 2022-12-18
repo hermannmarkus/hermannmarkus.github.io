@@ -13,30 +13,75 @@
                     <span class="fs-4">Podcast-Kombinat - Transcripts</span>
                 </a>
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link">Startseite</a></li>
                 </ul>
             </header>
         </div>
         <div class="container">
             <main>
-                <div class="row">
+                <div class="row mb-4">
+                    <div class="col">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/">Startseite</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">RV-09-17 Kathrin Ganz – Antifeminismus in digitalen Öffentlichkeiten</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row mb-4">
                     <div class="col">
                         <h1>RV-09-17 Kathrin Ganz – Antifeminismus in digitalen Öffentlichkeiten</h1>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mb-4">
                     <div class="col">
                         <div class="card">
                             <div class="card-body">
                                 <p class="mb-0"><b>Achtung</b>: Dieses Transkript wurde automatisch mit der <a href="https://github.com/ggerganov/whisper.cpp">Whisper-AI</a> erstellt.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
                         <audio id="audio1" data-able-player preload="metadata" data-transcript="external" data-transcript-div="trans" data-lyrics-mode>
                             <source type="audio/mpeg" src="https://podcast-kombinat.de/podcasts/gender-zentrum/rv-09-17-ganz-antifeminismus_in_digitalen_oeffentlichkeiten.mp3">
-                            <track kind="captions" src="pck-transcripts/revsided/rv-09-17-ganz-antifeminismus_in_digitalen_oeffentlichkeiten.wav.vtt">
+                            <track kind="captions" src="pck-transcripts/revised/rv-09-17-ganz-antifeminismus_in_digitalen_oeffentlichkeiten.wav.vtt">
                         </audio>
+                    </div>
+                    <div class="col">
                         <div id="trans"></div>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav nav-tabs" id="transcriptTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="original-tab" data-bs-toggle="tab" data-bs-target="#original-tab-pane" type="button" role="tab" aria-controls="original-tab-pane" aria-selected="true">Original Transkript</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="revised-tab" data-bs-toggle="tab" data-bs-target="#revised-tab-pane" type="button" role="tab" aria-controls="revised-tab-pane" aria-selected="false">Überarbeitetes Transkript</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="diff-tab" data-bs-toggle="tab" data-bs-target="#diff-tab-pane" type="button" role="tab" aria-controls="diff-tab-pane" aria-selected="false">Änderungen vergleichen</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="transcriptTabContent">
+                            <div class="tab-pane show active" id="original-tab-pane" role="tabpanel" aria-labelledby="original-tab" tabindex="0">
+                                <div id="originalContent" data-file-filename="rv-09-17-ganz-antifeminismus_in_digitalen_oeffentlichkeiten.wav.vtt">
+                                    <pre><code class="language-webvtt"></code></pre>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="revised-tab-pane" role="tabpanel" aria-labelledby="revised-tab" tabindex="0">
+                                <div id="revisedContent" data-file-filename="rv-09-17-ganz-antifeminismus_in_digitalen_oeffentlichkeiten.wav.vtt">
+                                    <pre><code class="language-webvtt"></code></pre>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="diff-tab-pane" role="tabpanel" aria-labelledby="diff-tab" tabindex="0">
+                                <div id="diffContent"></div>
+                            </div>
+                        </div>
                 </div>
             </main>
         </div>
@@ -49,7 +94,15 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="ableplayer/styles/ableplayer.css" type="text/css"/>
+    <link rel="stylesheet" href="jsdifflib/diffview.css" type="text/css"/>
+    <link rel="stylesheet" href="css/highlight.11.7.0.min.css">
 
     <!-- JavaScript -->
     <script src="ableplayer/build/ableplayer.dist.js"></script>
+    <script src="jsdifflib/diffview.js"></script>
+    <script src="jsdifflib/difflib.js"></script>
+    <script src="js/highlight.11.7.0.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="js/webvtt.js"></script>
+    <script src="js/transcripts.js"></script>
 </html>

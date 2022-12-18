@@ -4,3 +4,6 @@
 [submodule "ableplayer"]
 	path = ableplayer
 	url = https://github.com/ableplayer/ableplayer
+[submodule "jsdifflib"]
+	path = jsdifflib
+	url = https://github.com/cemerick/jsdifflib
