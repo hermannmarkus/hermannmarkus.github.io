@@ -6,3 +6,30 @@
 .able-status-bar {
     height: 2.5em;
 }
+
+table.diff {
+    border-radius: 3px;
+}
+
+table.diff tbody th {
+    background-color: rgba(210, 210, 210, 0.2);
+    color: black;
+    font-size: .8em;
+    vertical-align: middle;
+}
+
+table.diff tbody tr :nth-child(2).replace {
+    background-color: rgb(255, 235, 233);
+}
+
+table.diff tbody tr :nth-child(4).replace {
+    background-color: rgb(230, 255, 236);
+}
+
+table.diff .insert {
+    background-color: rgb(230, 255, 236);
+}
+
+table.diff .delete {
+    background-color: rgb(255, 235, 233);
+}
