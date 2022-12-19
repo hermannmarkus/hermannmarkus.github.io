@@ -19,7 +19,7 @@
         </div>
         <div class="container">
             <main>
-                <div class="row mb-4">
+                <div class="row mb-4 d-none d-sm-block">
                     <div class="col">
                         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                             <ol class="breadcrumb">
@@ -29,11 +29,13 @@
                         </nav>
                     </div>
                 </div>
+
                 <div class="row mb-4">
                     <div class="col">
                         <h1>RV-09-17 Kathrin Ganz – Antifeminismus in digitalen Öffentlichkeiten</h1>
                     </div>
                 </div>
+
                 <div class="row mb-4">
                     <div class="col">
                         <div class="card">
@@ -43,43 +45,58 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="row mb-4">
-                    <div class="col">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
                         <audio id="audio1" data-able-player preload="metadata" data-transcript="external" data-transcript-div="trans" data-lyrics-mode>
                             <source type="audio/mpeg" src="https://podcast-kombinat.de/podcasts/gender-zentrum/rv-09-17-ganz-antifeminismus_in_digitalen_oeffentlichkeiten.mp3">
                             <track kind="captions" src="pck-transcripts/revised/rv-09-17-ganz-antifeminismus_in_digitalen_oeffentlichkeiten.wav.vtt">
                         </audio>
                     </div>
-                    <div class="col">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
                         <div id="trans"></div>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col">
-                        <ul class="nav nav-tabs" id="transcriptTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="original-tab" data-bs-toggle="tab" data-bs-target="#original-tab-pane" type="button" role="tab" aria-controls="original-tab-pane" aria-selected="true">Original Transkript</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="revised-tab" data-bs-toggle="tab" data-bs-target="#revised-tab-pane" type="button" role="tab" aria-controls="revised-tab-pane" aria-selected="false">Überarbeitetes Transkript</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="diff-tab" data-bs-toggle="tab" data-bs-target="#diff-tab-pane" type="button" role="tab" aria-controls="diff-tab-pane" aria-selected="false">Änderungen vergleichen</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="transcriptTabContent">
-                            <div class="tab-pane show active" id="original-tab-pane" role="tabpanel" aria-labelledby="original-tab" tabindex="0">
-                                <div id="originalContent" data-file-filename="rv-09-17-ganz-antifeminismus_in_digitalen_oeffentlichkeiten.wav.vtt">
-                                    <pre><code class="language-webvtt"></code></pre>
+                        <p>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#transcriptCollapse" role="button" aria-expanded="false" aria-controls="transcriptCollapse">
+                                Transkript(e) anzeigen
+                            </a>
+                        </p>
+
+                        <div class="collapse show" id="transcriptCollapse">
+                            <div class="card card-body">
+                                <ul class="nav nav-tabs" id="transcriptTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="original-tab" data-bs-toggle="tab" data-bs-target="#original-tab-pane" type="button" role="tab" aria-controls="original-tab-pane" aria-selected="true">Original Transkript</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="revised-tab" data-bs-toggle="tab" data-bs-target="#revised-tab-pane" type="button" role="tab" aria-controls="revised-tab-pane" aria-selected="false">Überarbeitetes Transkript</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="diff-tab" data-bs-toggle="tab" data-bs-target="#diff-tab-pane" type="button" role="tab" aria-controls="diff-tab-pane" aria-selected="false">Änderungen vergleichen</button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content" id="transcriptTabContent">
+                                    <div class="tab-pane" id="original-tab-pane" role="tabpanel" aria-labelledby="original-tab" tabindex="0">
+                                        <div id="originalContent" data-file-filename="rv-09-17-ganz-antifeminismus_in_digitalen_oeffentlichkeiten.wav.vtt">
+                                            <pre><code class="language-webvtt"></code></pre>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane" id="revised-tab-pane" role="tabpanel" aria-labelledby="revised-tab" tabindex="0">
+                                        <div id="revisedContent" data-file-filename="rv-09-17-ganz-antifeminismus_in_digitalen_oeffentlichkeiten.wav.vtt">
+                                            <pre><code class="language-webvtt"></code></pre>
+                                        </div>
+                                    </div>
+
+                                    <div class="tab-pane show active" id="diff-tab-pane" role="tabpanel" aria-labelledby="diff-tab" tabindex="0">
+                                        <div id="diffContent"></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="tab-pane" id="revised-tab-pane" role="tabpanel" aria-labelledby="revised-tab" tabindex="0">
-                                <div id="revisedContent" data-file-filename="rv-09-17-ganz-antifeminismus_in_digitalen_oeffentlichkeiten.wav.vtt">
-                                    <pre><code class="language-webvtt"></code></pre>
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="diff-tab-pane" role="tabpanel" aria-labelledby="diff-tab" tabindex="0">
-                                <div id="diffContent"></div>
                             </div>
                         </div>
                     </div>
